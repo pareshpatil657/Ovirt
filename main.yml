@@ -1,0 +1,65 @@
+---
+
+ - hosts: localhost
+   connection: local
+   gather_facts: no
+   vars_files: 
+     - vars/vars.yml
+   tasks:
+
+   - name: Obtain SSO token with using username/password credentials
+     ovirt_auth:
+         url: "{{ ovirt_url }}"
+         username: "{{ ovirt_username }}"
+         ca_file:  "{{ca_certificate }}" 
+         password: "{{ ovirt_password }}"
+  
+   
+   - name: Create a bootable disk image for VM    
+     ovirt_disk:
+         auth: "{{ ovirt_auth }}"
+         name: "{{vm_name}}_OS_Disk"
+         size:  8GiB
+         format: cow
+         interface: virtio
+         image_path: /home/centos_template.qcow2 
+         storage_domain: domain1
+         wait: true
+   
+   - name: Create Disk to be attached to the  VM
+     ovirt_disk:
+        auth: "{{ ovirt_auth }}"
+        state: present
+        name: "{{vm_name}}_Disk"
+        size: "{{ vm_hdd_size }}GiB"
+        interface: virtio
+        storage_domain: domain1
+        wait: true
+
+   - name: Create the VM 
+     ovirt_vms:
+       auth: "{{ ovirt_auth }}"
+       state: present
+       name: "{{ vm_name }}"
+       cluster: ovirt1-Local
+       memory: "{{ vm_memory }}GiB"
+       cpu_cores: "{{ vm_cpu_cores }}"
+       type: desktop
+       operating_system: other_linux
+       disks:
+         -  name: "{{vm_name}}_OS_Disk"
+            bootable: true
+         -  name: "{{vm_name}}_Disk"
+            bootable: false
+       wait: true
+        
+   - name: Attach NIC to the VM
+     ovirt_nics:
+       auth: "{{ ovirt_auth }}"
+       state: present
+       vm: "{{ vm_name }}"
+       name: nic1
+       interface: virtio
+       profile:  "{{ vm_network_profile }}"
+       network:  "{{ vm_network }}"
+       wait: true
