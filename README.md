@@ -11,7 +11,7 @@ The below requirements are needed on the host that executes this playbook.
 3. ovirt-engine-sdk-python >= 4.2.4
 
 
-# To Create a new VM Follow below steps
+## To Create a new VM Follow below steps:
 
 # Copy the file vars.yml located in vars directory and fill below variables:
 
