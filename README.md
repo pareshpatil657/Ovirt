@@ -32,5 +32,6 @@ If you do not have ca certificate downloaded on the host. Please follow the firs
  https://docs.google.com/document/d/1VwpDzDIHAFlrvl7zSnk3MnM5wP3qt3pX-M-1pVZT9fs/edit?usp=sharing  
 
 Please refer sameple file  vars/DJ_api_vars.yml.
+
 If you have to create multiple VMs at at time, make copies of  vars.yml file and edit them. Run the  main playbook by including the new var file in playbook one at a time.
 
