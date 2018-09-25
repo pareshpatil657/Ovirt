@@ -1,0 +1,11 @@
+ovirt_url: <URL>
+ca_certificate : <path_of_ca_certificate>
+ovirt_username : <Ovirt_username>
+ovirt_password : <Ovirt_passowrd>
+vm_name : <VM_Name>
+vm_memory : <Memory_of_VM>
+vm_cpu_cores : <virtual_Cppu_core_of_VM>
+vm_hdd_size :  <Size_of_Disk_to_be_attached_to_VM>
+vm_network : <Netword_Name>
+vm_network_profile : <Profile_of_Network>
+

@@ -1,0 +1,11 @@
+ovirt_username : admin@internal
+opvirt_password : P@ssw0rd_123
+ovirt_url: https://ovirt.trustingsocial.com/ovirt-engine/api
+ca_certificate : etc/pki/ovirt-engine/ca.pem
+vm_name : DJ_API
+vm_memory : 4
+vm_cpu_cores : 1
+vm_hdd_size :  50
+vm_network_profile : DJ_API
+vm_network : DJ_API
+
