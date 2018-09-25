@@ -15,16 +15,16 @@ Create a new VM
 
  Edit the file vars.yml in vars directory and fill below variables:
 
-   1. ovirt_url 
+   1. ovirt_url :
    2. ovirt_username
    3. ovirt_password
    4. ca_certificate  
-   5. vm_name
-   6. vm_memory 
-   7. vm_cpu_cores
-   8. vm_hdd_size
-   9. vm_network
-  10. vm_network_profile
+   5. vm_name : Name of VM to be created
+   6. vm_memory : Physical Memory to be allocated
+   7. vm_cpu_cores: VCpu cores to be allocated to VM
+   8. vm_hdd_size: Size of Drive in Gibs to be attached to VM
+   9. vm_network : Name of VLan VM should be attached
+  10. vm_network_profile: Profile of VLAN 
 
  If you do not have ca certificate downloaded on the host. Please follow the first point in the document
  https://docs.google.com/document/d/1VwpDzDIHAFlrvl7zSnk3MnM5wP3qt3pX-M-1pVZT9fs/edit?usp=sharing  
