@@ -1,8 +1,8 @@
 
 
-Playbook to create a new VM in Ovirt
+## Playbook to create a new VM in Ovirt
 
-Setup
+## Setup
 
 The below requirements are needed on the host that executes this playbook.
 
@@ -11,9 +11,9 @@ The below requirements are needed on the host that executes this playbook.
 3. ovirt-engine-sdk-python >= 4.2.4
 
 
-Create a new VM
+## To Create a new VM Follow below steps
 
- Copy the file vars.yml located in vars directory and fill below variables:
+# Copy the file vars.yml located in vars directory and fill below variables:
 
    1. ovirt_url :
    2. ovirt_username
@@ -26,7 +26,10 @@ Create a new VM
    9. vm_network : Name of VLan VM should be attached
   10. vm_network_profile: Profile of VLAN 
 
-Note:
+# Run the playbook using below command
+   $ ansible-playbook main.yml
+
+## Notes:
 
 If you do not have ca certificate downloaded on the host. Please follow the first point in the document
  https://docs.google.com/document/d/1VwpDzDIHAFlrvl7zSnk3MnM5wP3qt3pX-M-1pVZT9fs/edit?usp=sharing  
