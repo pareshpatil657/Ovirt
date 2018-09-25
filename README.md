@@ -18,7 +18,7 @@ Create a new VM
    1. ovirt_url 
    2. ovirt_username
    3. ovirt_password
-   4. ca_certificate 
+   4. ca_certificate  
    5. vm_name
    6. vm_memory 
    7. vm_cpu_cores
@@ -26,4 +26,5 @@ Create a new VM
    9. vm_network
   10. vm_network_profile
 
-  
+ If you do not have ca certificate downloaded on the host. Please follow the first point in the document
+ https://docs.google.com/document/d/1VwpDzDIHAFlrvl7zSnk3MnM5wP3qt3pX-M-1pVZT9fs/edit?usp=sharing  
