@@ -26,5 +26,7 @@ Create a new VM
    9. vm_network : Name of VLan VM should be attached
   10. vm_network_profile: Profile of VLAN 
 
+Please refer sameple file  vars/DJ_api_vars.yml.
+
  If you do not have ca certificate downloaded on the host. Please follow the first point in the document
  https://docs.google.com/document/d/1VwpDzDIHAFlrvl7zSnk3MnM5wP3qt3pX-M-1pVZT9fs/edit?usp=sharing  
