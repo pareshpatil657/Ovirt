@@ -18,7 +18,7 @@ The below requirements are needed on the host that executes this playbook.
    1. ovirt_url 
    2. ovirt_username
    3. ovirt_password
-   4. ca_certificate : certificate downloaded from ovirt portal
+   4. ca_certificate : Certificate downloaded from ovirt portal
    5. vm_name : Name of VM to be created
    6. vm_memory : Physical Memory to be allocated
    7. vm_cpu_cores: VCpu cores to be allocated to VM
