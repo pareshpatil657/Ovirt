@@ -2,7 +2,7 @@
 
 ## Playbook to create a new VM in Ovirt
 
-## Setup
+## Requirements
 
 The below requirements are needed on the host that executes this playbook.
 
