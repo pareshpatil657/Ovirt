@@ -1,6 +1,6 @@
 ovirt_username : admin@internal
 opvirt_password : <password>
-ovirt_url: https://ovirt.trustingsocial.com/ovirt-engine/api
+ovirt_url: https://<ovirt-domain>//ovirt-engine/api
 ca_certificate : /etc/pki/ovirt-engine/ca.pem
 vm_name : DJ_API
 vm_memory : 4
