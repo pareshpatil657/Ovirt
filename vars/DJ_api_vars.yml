@@ -1,5 +1,5 @@
-ovirt_username : admin@internal
-opvirt_password : <password>
+ovirt_username : user1
+opvirt_password : pass12
 ovirt_url: https://<ovirt-domain>//ovirt-engine/api
 ca_certificate : /etc/pki/ovirt-engine/ca.pem
 vm_name : DJ_API
